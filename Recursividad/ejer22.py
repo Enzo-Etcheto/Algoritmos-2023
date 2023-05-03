@@ -18,10 +18,8 @@ mochi = ["comida", "agua", "mapa", "linterna", "sable de luz", "comunicador"]
 def extraer_mochila(mochila, indice=0, objetos=0):
     """Función recursiva que busca un sable de luz en la mochila de un jedi"""
     if len(mochila) == indice:
-        # Si ya se verificaron todos los objetos de la mochila y no se encontró un sable de luz, retornamos None.
         return "mochila vacia"
     elif mochila[indice] == "sable de luz":
-        # Si encontramos un sable de luz, retornamos el número de objetos que se sacaron para encontrarlo.
         return f"se encontro el sable y se sacaron {objetos} objetos"
     else:
         print("se extrajo un objeto de la mochila",mochila[indice])
